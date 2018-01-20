@@ -64,6 +64,7 @@ public abstract class Dinosaur {
 
         double healthP = crrHealth / Health;
 
+		//Errosion is for enclosures. Errosion rate increases based on time away from game.
         if (healthP >= .95)
         {
             crrErrorsionRate = errosionRate * .5;
@@ -80,7 +81,6 @@ public abstract class Dinosaur {
         {
             crrErrorsionRate = errosionRate * 3;
         }
-        
     }
 
     /// <summary>
